@@ -10,16 +10,16 @@ Servo servowrist;
 int pos = 0;    // variable to store the servo position
 
 void setup() {
-  servothumb.attach(2);
-  servoindex.attach(3);
-  servomajeure.attach(4);
-  servoringfinger.attach(5);
-  servopinky.attach(6);
+  servothumb.attach(2); // Attach data pin to pin 2 arduino
+  servoindex.attach(3); // Attach data pin to pin 3 arduino
+  servomajeure.attach(4); // Attach data pin to pin 4 arduino
+  servoringfinger.attach(5); // Attach data pin to pin 5 arduino
+  servopinky.attach(6); // Attach data pin to pin 6 arduino
 }
 
 void loop() {
   // Move All Servo to 0 degree
-  servothumb.write(0);
+  servothumb.write(0);  // write degree of the servo (0-180)
   servoindex.write(0);
   servomajeure.write(0);
   servoringfinger.write(0);
